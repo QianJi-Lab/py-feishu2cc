@@ -1,17 +1,16 @@
 # 🤖 飞书 Claude Code 远程控制机器人
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)]()
+## 🙏 致谢
 
-**状态**: ✅ 核心功能已完成，可投入使用，稍微有一个 bug 就是会重复发送指令，正在施工🚧ing
-
-通过飞书机器人实时接收 Claude Code 任务通知，并支持远程发送命令到 Claude Code 会话。
-
-目前基于 Windows，后期考虑迭代
+- 原始 Go 版本项目 https://github.com/tqtcloud/feishu-bot
+- 飞书开放平台
+- lark-oapi Python SDK
 
 ## ✨ 主要功能
 
-- ✅ 📬 **实时接收通知** - Claude Code 任务完成/等待输入通知
-- ✅ 📝 **任务输出显示** - 自动捕获并显示 Claude 的回复内容
-- ✅ ⌨️ **远程发送命令** - 通过飞书消息控制 tmux 会话
+- 📬 **实时接收通知** - Claude Code 任务完成/等待输入通知
+- 📝 **任务输出显示** - 自动捕获并显示 Claude 的回复内容
+- ⌨️ **远程发送命令** - 通过飞书消息控制 tmux 会话
+- 目前基于 Windows，后期考虑迭代
 
 ## 🚀 快速开始
 
@@ -58,6 +57,10 @@ venv\Scripts\python.exe services\bot_service.py
 
 **完成度: 50%** (核心功能)
 
+> 稍微有一个 bug 就是会重复发送指令，正在施工🚧ing
+
+通过飞书机器人实时接收 Claude Code 任务通知，并支持远程发送命令到 Claude Code 会话。
+
 ### 已实现模块
 - ✅ Command 命令执行 (解析、验证)
 - ✅ Config 配置管理 (YAML + 环境变量)
@@ -66,6 +69,10 @@ venv\Scripts\python.exe services\bot_service.py
 - ✅ Webhook Service (HTTP服务)
 - ✅ Bot Service (消息处理)
 
-## 许可证
+## 🤝 贡献
 
-MIT License
+欢迎贡献代码、报告问题或提出建议!
+
+## 📄 许可证
+
+MIT License [![License](https://img.shields.io/badge/License-MIT-yellow.svg)]()
