@@ -1,0 +1,38 @@
+# 飞书应用配置
+feishu:
+  app_id: ${FEISHU_APP_ID}
+  app_secret: ${FEISHU_APP_SECRET}
+
+# Webhook 服务配置
+webhook:
+  port: 8080
+  host: "0.0.0.0"
+
+# Session 配置
+session:
+  storage_file: "data/sessions.json"
+  token_length: 8
+  expiration_hours: 24
+  cleanup_interval_minutes: 60
+
+# 日志配置
+logging:
+  level: "INFO"
+  file: "data/logs/app.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# 卡片模板配置
+cards:
+  task_completed_card_id: "AAqz1Y1QyEzLF"
+  task_waiting_card_id: "AAqz1Y1p8y5Se"
+  command_result_card_id: "AAqz1Y1TvQB25"
+  session_list_card_id: ""
+
+# 安全配置
+security:
+  whitelist_file: "configs/security/whitelist.yaml"
+  max_command_length: 1000
+  dangerous_commands:
+    - "rm -rf /"
+    - "mkfs"
+    - "dd if=/dev/zero"

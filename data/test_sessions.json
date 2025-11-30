@@ -1,0 +1,17 @@
+{
+  "sessions": {
+    "PWYQZAL8": {
+      "token": "PWYQZAL8",
+      "user_id": "test_user",
+      "open_id": "ou_test123",
+      "tmux_session": "claude-code",
+      "working_dir": "C:\\Users\\test",
+      "description": "测试会话",
+      "status": "active",
+      "created_at": "2025-11-11T17:16:09.298627",
+      "expires_at": "2025-11-12T17:16:09.298627",
+      "last_active_at": "2025-11-11T17:16:09.298627"
+    }
+  },
+  "updated_at": "2025-11-11T17:17:07.769394"
+}

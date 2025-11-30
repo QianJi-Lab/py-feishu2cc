@@ -1,0 +1,20 @@
+# 飞书机器人用户白名单配置
+# 请替换下面的占位符为你的实际飞书用户信息
+
+allowed_users:
+  - user_id: "78495dd8"                    # 你的飞书用户ID(短格式)
+    open_id: "ou_94f57fde84ec51561745ae6bc13ec6f8"                 # 你的飞书OpenID(长格式,格式如: ou_xxxxxxxx)
+    name: "李虹均"                          # 你的姓名(可选,方便管理)
+    permissions:
+      - "command_execute"                      # 命令执行权限
+      - "session_manage"                       # 会话管理权限
+    max_sessions: 5                            # 最大并发会话数
+
+# 管理员用户(拥有所有权限)
+admin_users:
+  - "ou_94f57fde84ec51561745ae6bc13ec6f8"                          # 使用OpenID
+
+# 全局限制
+global_limits:
+  max_total_sessions: 50                       # 系统最大会话数
+  max_session_duration_hours: 48               # 最大会话持续时间
