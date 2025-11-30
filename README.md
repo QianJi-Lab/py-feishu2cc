@@ -14,6 +14,8 @@
 
 ## 🚀 快速开始
 
+[演示视频链接](https://github.com/QianJi-Lab/py-feishu2cc/blob/main/feishu2cc%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91.mp4)
+
 ### 1. 启动服务
 
 ```bash
